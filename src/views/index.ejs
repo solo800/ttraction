@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An application to help teachers">
+    <meta name="author" content="A.E. Solomon">
+
+    <title>Teacher Traction - An app to help teachers</title>
+
+    <link rel='stylesheet' href='css/app.css'/>
+    <!-- <link rel='stylesheet' href='glyphs/css/bootstrap.min.css'/> -->
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+    <% include ./partials/header %>
+
+    <% if ("undefined" === typeof user) { %>
+        <% include ./partials/loginForm %>
+    <% } %>
+
+    <!-- External Dependencies -->
+    <script type="text/javascript" src="js/bundle.js"></script>
+</body>
+
+</html>

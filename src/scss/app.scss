@@ -1,0 +1,38 @@
+/* Colors */
+$black: #000000;
+$ink: #062F4F;
+$darkBorder: #813772;
+$embers: #B82601;
+
+/* Fonts */
+@font-face {
+    font-family: 'didact_gothicregular';
+    src: url('../fonts/didactgothic-webfont.woff2') format('woff2'),
+         url('../fonts/didactgothic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'josefin_sansregular';
+    src: url('../fonts/josefinsans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Glyphicons */
+@font-face {
+    font-family: 'glyphicons-halflings-regular';
+    src: url('../fonts/gliphicons-halflings-regular.eot') format('eot')
+         url('../fonts/gliphicons-halflings-regular.svg') format('svg')
+         url('../fonts/gliphicons-halflings-regular.ttf') format('ttf')
+         url('../fonts/gliphicons-halflings-regular.woff') format('woff')
+         url('../fonts/gliphicons-halflings-regular.woff2') format('woff2');
+     font-weight: normal;
+     font-style: normal;
+}
+
+@import '_framework';
+
+@import '_header';
+@import '_loginForm';

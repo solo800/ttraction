@@ -1,0 +1,74 @@
+#loginForm {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid $darkBorder;
+    display: flex;
+    flex-direction: column;
+    font-family: 'didact_gothicregular';
+
+    input, button, a {
+        font-size: 1.2em;
+    }
+
+    > div {
+        display: flex;
+        justify-content: space-around;
+        padding: 0.5em;
+
+        &.nav {
+            padding-bottom: 0;
+            margin-bottom: 0.5em;
+            background-color: $darkBorder;
+
+            > div {
+                width: 48%;
+                margin: 0 1%;
+                padding: 0.25em;
+                display: flex;
+                justify-content: space-around;
+                background-color: $darkBorder;
+                transition: 0.3s;
+
+                &.active {
+                    background-color: white;
+
+                    > a {
+                        color: $darkBorder;
+                    }
+                }
+                &:hover:not(.active) {
+                    background-color: lighten($darkBorder, 15%);
+                    cursor: pointer;
+                }
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+        &.inputs {
+            flex-direction: column;
+            align-items: center;
+
+            > * {
+                width: 80%;
+            }
+            > span.errorMessage {
+                color: red;
+            }
+            > input {
+                margin-bottom: 0.75em;
+
+                &.error {
+                    border: 1px solid red;
+                }
+            }
+            > button {
+                @include buttonLightDark();
+            }
+        }
+    }
+}
